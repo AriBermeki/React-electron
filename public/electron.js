@@ -19,7 +19,7 @@ function createWindow () {
   })
 
   // and load the index.html of the app.
-  mainWindow.loadURL(isDev ? 'https://mognius-react-prod-system-qf2zdm.mo4.mogenius.io' : `file://${path.join(__dirname, "../build/index.html")}`) // 'http://localhost:3000'
+  mainWindow.loadURL(isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, "../build/index.html")}`) // 'http://localhost:3000'
   mainWindow.once('ready-to-show',() => mainWindow.show()); // öffner die App, wenn der geasamte System Bereit ist, also Backend(Server) zu erst laufen lassen und dann Frontend Laufen lassen.
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
