@@ -1,5 +1,5 @@
 {
-  "name": "react-electron",
+  "name": "system",
   "version": "0.1.0",
   "private": true,
   "main": "public/electron.js",
@@ -14,7 +14,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "react-router-dom": "^6.4.3"
   },
   "scripts": {
     "react-start": "react-scripts start",
@@ -48,5 +49,27 @@
     "electron": "^21.1.1",
     "electron-builder": "^23.6.0",
     "wait-on": "^6.0.1"
+  },
+  "build": {
+    "appId": "com.my-website.my-app",
+    "productName": "System",
+    "copyright": "Copyright © 2019 Ari Bermeki",
+    "mac": {
+      "icon": "./public/icon.png"  
+      
+    },
+    "win": {
+      "icon": "./public/yellow_win.png" 
+    },
+    "files": [
+      "./build/**/*",
+      "./dist/**/*",
+      "./node_modules/**/*",
+      "./public/**/*",      
+      "*.js"
+    ],
+    "directories": {
+      "buildResources": "public" 
+    }
   }
 }
